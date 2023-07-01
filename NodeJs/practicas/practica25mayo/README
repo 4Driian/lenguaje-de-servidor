@@ -1,0 +1,39 @@
+#Examen realizado por Adrián Zúñiga Pérez
+
+Instrucciones:
+
+1. Importa los módulos necesarios en Node.js para poder utilizar axios, chalk y los módulos nativos. (5 
+puntos) 
+  
+2. Crea una función asincrónica llamada `fetchPokemon` que acepte un número como parámetro. Utiliza 
+axios para hacer una solicitud GET a la siguiente URL: `https://pokeapi.co/api/v2/pokemon/{numero}`. 
+Reemplaza "{numero}" con el número proporcionado como parámetro. La función debe retornar los 
+datos obtenidos en formato JSON. (15 puntos) 
+  
+3. Utilizando la función `fetchPokemon` y async/await, realiza una solicitud a la API mencionada y 
+muestra en consola el nombre y los tipos de un Pokémon con el número 25. Si el número proporcionado 
+es menor a 1 o mayor a 898, lanza una excepción con el mensaje "Número de Pokémon inválido". (20 
+puntos) 
+  
+4. Crea una función llamada `formatPokemon` que acepte el nombre y los tipos de un Pokémon como 
+parámetros y devuelva una cadena de texto formateada con el siguiente formato: "El Pokémon 
+{nombre} es de tipo {tipo1} y {tipo2}". Si el Pokémon solo tiene un tipo, la cadena de texto debe ser: "El 
+Pokémon {nombre} es de tipo {tipo1}". Utiliza el módulo `chalk` para que los nombres de los Pokémon y 
+los tipos sean de color amarillo. Si alguno de los parámetros es nulo o indefinido, lanza una excepción 
+con el mensaje "Datos de Pokémon incompletos". (15 puntos) 
+  
+5. Llama a la función `formatPokemon` pasando como parámetros el nombre y los tipos del Pokémon 
+obtenido en el paso anterior y muestra en consola el resultado. Si ocurre alguna excepción, captúrala y 
+muestra en consola el mensaje de error correspondiente. (10 puntos) 
+  
+6. Utiliza un módulo nativo de Node.js para leer el contenido de un archivo llamado "datos.txt". Si el 
+archivo no existe, lanza una excepción con el mensaje "El archivo 'datos.txt' no existe". Muestra en 
+consola el contenido leído. (15 puntos) 
+  
+7. Crea una función llamada `writeToFile` que acepte un mensaje como parámetro y lo escriba en un 
+archivo llamado "resultados.txt". Si ocurre algún error al escribir en el archivo, lanza una excepción con 
+el mensaje "Error al escribir en el archivo 'resultados.txt'". Utiliza un módulo nativo de Node.js para 
+realizar esta operación. (15 puntos) 
+  
+8. Llama a la función `writeToFile` con el siguiente mensaje: "Examen finalizado". Si ocurre alguna 
+excepción, captúrala y muestra en consola el mensaje de error correspondiente. (10 puntos)
